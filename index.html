@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛒 Herbalife Product Price Calculator</h1>
+            <p>Enter quantities to calculate totals with different discount levels</p>
+            <br>
+            <p style="text-align: left">By Ayush Kakkar</p>
+        </div>
+
+        <div class="products-section">
+            <h2>Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Product cards will be rendered here -->
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>📊 Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-card card-1">
+                    <div class="card-label">Total Quantity</div>
+                    <div class="card-value" id="totalQty">0</div>
+                </div>
+                <div class="summary-card card-2">
+                    <div class="card-label">Total Volume Points</div>
+                    <div class="card-value" id="totalVP">0.00</div>
+                </div>
+                <div class="summary-card card-3">
+                    <div class="card-label">Delivery Charge</div>
+                    <div class="card-value" id="deliveryCharge">₹0</div>
+                    <div class="card-note" id="deliveryNote">&lt; 100 VP</div>
+                </div>
+                <div class="summary-card card-4">
+                    <div class="card-label">Total MRP</div>
+                    <div class="card-value" id="totalMRP">₹0</div>
+                    <div class="card-note" id="mrpWithout">Without delivery: ₹0</div>
+                </div>
+                <div class="summary-card card-5">
+                    <div class="card-label">Total @ 25% Discount</div>
+                    <div class="card-value" id="total25">₹0</div>
+                    <div class="card-note" id="d25Without">Without delivery: ₹0</div>
+                </div>
+                <div class="summary-card card-6">
+                    <div class="card-label">Total @ 35% Discount</div>
+                    <div class="card-value" id="total35">₹0</div>
+                    <div class="card-note" id="d35Without">Without delivery: ₹0</div>
+                </div>
+                <div class="summary-card card-7">
+                    <div class="card-label">Total @ 42% Discount</div>
+                    <div class="card-value" id="total42">₹0</div>
+                    <div class="card-note" id="d42Without">Without delivery: ₹0</div>
+                </div>
+                <div class="summary-card card-8">
+                    <div class="card-label">Total @ 50% Discount</div>
+                    <div class="card-value" id="total50">₹0</div>
+                    <div class="card-note" id="d50Without">Without delivery: ₹0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <p style="text-align: center; padding: 10px; font-size: 18px; color: #1B3C53;">Created by Ayush Kakkar</p>    
+        <p style="text-align: center; padding: 10px; font-size: 14px; color: #555;">&copy; 2025 Ayush Kakkar. All rights reserved.</p>
+        <p style="text-align: center; padding: 10px; font-size: 14px; color: #555;">This is a personal project for educational purpose and is not affiliated with any company.</p>    
+    </footer>
+
+    <script src="app.js"></script>
+
+    <div class="floating-summary-btn">
+        <button class="btn btn--primary floating-btn" onclick="scrollToSummary()">
+            📊 Summary
+        </button>
+    </div>
+
+</body>
+</html>
